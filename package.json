@@ -1,0 +1,9 @@
+{
+  "name": "triangle-types",
+  "version": "1.0.0",
+  "description": "Lets figure out triangle types",
+  "main": "index.js",
+  "repository": "git@github.com:WebCloud/triangle-types.git",
+  "author": "Vinicius Dallacqua <vinicius.dallacqua@klarna.com>",
+  "license": "MIT"
+}
