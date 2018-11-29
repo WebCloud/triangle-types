@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Testing 1, 2, 3</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-11.1.0.min.css" />
+</head>
+
+<body>
+  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <button data-ts="Button" class="ts-primary">
+    <span>Primary</span>
+  </button>
+  <script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-11.1.0.min.js"></script>
+  <script type="text/javascript">
+  var datePicker = ts.ui.DatePicker({
+      title: "Your Birthday",
+      value: '1973-03-26',
+      onselect: function (newval, oldval) {
+        ts.ui.Notification.success(this.value);
+        this.close();
+      }
+    });
+    document.querySelector('.ts-primary').onclick = () => datePicker.open()
+  </script>
+</body>
+
+</html>
