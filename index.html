@@ -9,25 +9,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="//d5wfroyti11sa.cloudfront.net/prod/client/ts-11.1.0.min.css" />
+  <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <button data-ts="Button" class="ts-primary">
-    <span>Primary</span>
-  </button>
+  <main data-ts="Main">
+    <div data-ts="MainContent">
+      <h2>Tell me your sides and I'll tell you your type</h2>
+      <form data-ts="Form">
+        <fieldset>
+          <label>
+            <span>Side one</span>
+            <input type="number" required />
+          </label>
+          <label>
+            <span>Side two</span>
+            <input type="number" required />
+          </label>
+          <label>
+            <span>Side three</span>
+            <input type="number" required />
+          </label>
+        </fieldset>
+        <button data-ts="Button" class="ts-primary">
+          <span>Lemme guess...</span>
+        </button>
+      </form>
+    </div>
+    <div class="images">
+      <img class="equilateral" src="images/dawg.gif" />
+      <img class="isosceles" src="images/so_hot.gif" />
+      <img class="scalene" src="images/palpatine.gif" />
+    </div>
+  </main>
   <script src="//d5wfroyti11sa.cloudfront.net/prod/client/ts-11.1.0.min.js"></script>
-  <script type="text/javascript">
-  var datePicker = ts.ui.DatePicker({
-      title: "Your Birthday",
-      value: '1973-03-26',
-      onselect: function (newval, oldval) {
-        ts.ui.Notification.success(this.value);
-        this.close();
-      }
-    });
-    document.querySelector('.ts-primary').onclick = () => datePicker.open()
-  </script>
+  <script src="index.js"></script>
 </body>
 
 </html>
